@@ -1,0 +1,28 @@
+<header class="header">
+  <mat-toolbar>
+    <button mat-icon-button (click)="toggleSidenav()" aria-label="Open sidenav button">
+      <mat-icon>menu</mat-icon>
+    </button>
+    <ul class="nav">
+      <li class="nav__item" *ngIf="user$ | async as user">
+        <button mat-button [matMenuTriggerFor]="menu"
+                aria-label="user menu"
+                class="user-info"
+        >
+          <mat-icon class="material-icons-outlined">account_circle</mat-icon>
+          {{ user.name }} {{ user.surname }}
+        </button>
+        <mat-menu #menu="matMenu" class="mat-elevation-z1" xPosition="before">
+          <button mat-menu-item>
+            <mat-icon>dialpad</mat-icon>
+            <span>Профиль пользователя</span>
+          </button>
+          <button mat-menu-item (click)="onLogout()">
+            <mat-icon>notifications_off</mat-icon>
+            <span>Выход</span>
+          </button>
+        </mat-menu>
+      </li>
+    </ul>
+  </mat-toolbar>
+</header>

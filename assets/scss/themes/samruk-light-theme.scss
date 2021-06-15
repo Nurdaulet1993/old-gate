@@ -1,0 +1,21 @@
+@use '~@angular/material' as mat;
+//@use "node_modules/@angular/material" as mat;
+//@import "~@angular/material/theming";
+//
+//@include mat-core();
+
+@include mat.core();
+
+$samruk-light-primary: mat.define-palette(mat.$indigo-palette, 500);
+$samruk-light-accent:  mat.define-palette(mat.$orange-palette, A200, A100, A400);
+$samruk-light-warn:    mat.define-palette(mat.$deep-orange-palette);
+
+$samruk-light-theme: mat.define-light-theme((
+  color: (
+    primary: $samruk-light-primary,
+    accent: $samruk-light-accent,
+    warn: $samruk-light-warn,
+  )
+));
+
+@include mat.core-theme($samruk-light-theme);

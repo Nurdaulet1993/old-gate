@@ -1,0 +1,43 @@
+/* You can add global styles to this file, and also import other style files */
+@import "assets/scss/themes/samruk-light-theme";
+
+html, body {
+  height: 100%;
+  //background-color: #f4f7fc;
+}
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+
+$primary-clr: (
+  50 : #e3eaeb,
+  100 : #b8cace,
+  200 : #89a7ae,
+  300 : #5a848d,
+  400 : #366974,
+  500 : #134f5c,
+  600 : #114854,
+  700 : #0e3f4a,
+  800 : #0b3641,
+  900 : #062630,
+  A100 : #6ad5ff,
+  A200 : #37c6ff,
+  A400 : #04b8ff,
+  A700 : #00a7e9,
+  contrast: (
+    50 : #000000,
+    100 : #000000,
+    200 : #000000,
+    300 : #ffffff,
+    400 : #ffffff,
+    500 : #ffffff,
+    600 : #ffffff,
+    700 : #ffffff,
+    800 : #ffffff,
+    900 : #ffffff,
+    A100 : #000000,
+    A200 : #000000,
+    A400 : #000000,
+    A700 : #ffffff,
+  )
+);
+

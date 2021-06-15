@@ -1,0 +1,22 @@
+<section class="sign-in">
+  <mat-card>
+    <mat-card-header>
+      <mat-card-title>Центр обмена документами Самрук Казына</mat-card-title>
+    </mat-card-header>
+    <form *ngIf="loginForm" [formGroup]="loginForm" (ngSubmit)="onSave()">
+      <mat-card-content>
+        <mat-form-field class="example-full-width" appearance="outline">
+          <mat-label>Электронный адрес</mat-label>
+          <input type="email" matInput placeholder="Ex. pat@example.com" formControlName="username">
+        </mat-form-field>
+        <mat-form-field class="example-full-width" appearance="outline">
+          <mat-label>Пароль</mat-label>
+          <input type="password" matInput placeholder="Ex. pat@example.com" formControlName="password">
+        </mat-form-field>
+      </mat-card-content>
+      <mat-card-actions>
+        <button mat-flat-button color="primary">Войти</button>
+      </mat-card-actions>
+    </form>
+  </mat-card>
+</section>

@@ -1,0 +1,12 @@
+{
+  "/login": {
+    "target": "https://dxc.sk.kz",
+    "secure": false,
+    "changeOrigin": true
+  },
+  "/logout": {
+    "target": "https://dxc.sk.kz",
+    "secure": false,
+    "changeOrigin": true
+  }
+}
